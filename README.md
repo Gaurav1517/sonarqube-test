@@ -138,6 +138,7 @@ sudo vi docker-compose.yml
 ADD FOLLOWING LINES TO DOCKER COMPOSE FILE AND SAVE WITH :WQ COMMAND
 --------------------------------------------------------------------
 
+```bash
 version: "3"
 services:
   sonarqube:
@@ -170,7 +171,7 @@ volumes:
   sonarqube_logs:
   postgresql:
   postgresql_data:
-
+```
 ------------------------------
 RUN DOCKER COMPOSE COMMAND 
 ------------------------------
