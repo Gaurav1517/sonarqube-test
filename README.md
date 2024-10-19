@@ -199,15 +199,18 @@ WAIT FOR OUTPUT
  SonarQube is operational
 ---------------------------------------
 GET ACCESS IN BROWSER 
+```bash
 192.168.157.133:9000
+```
+
 DEFAULT USERNAME: admin
 DEFAULT PASSWORD: admin
-UPDATE THE PASSWORD -> Sonar_8115230
+UPDATE THE PASSWORD -> password
 -------------------------------------------------------
 Generate Token in SonarQube
 Account > MyAccount > Security > Generate Token 
 Enter Token Name: test Type: User Token  Expires in: 30
-squ_7f241778084ea5e7f00c99d277c0f1d94a8c96a1
+token-*************
 --------------------------------------------------
 
 Project > Create a local Project > Project display name: test Project key: test Main branch name : main Next > Choose the baseline for new code for this project Use the global setting > Create Project 
