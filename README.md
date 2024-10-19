@@ -94,8 +94,10 @@ sudo vi /etc/sysctl.conf
 --------------------------------------
 ADD FOLLOWING LINES AND SAVE WITH :WQ
 --------------------------------------
+```bash
 vm.max_map_count=262144
 fs.file-max=65536
+```
 
 ----------------
 VERIFY ENTRIES 
@@ -197,7 +199,7 @@ sudo docker-compose logs --follow
 ------------------------
 WAIT FOR OUTPUT
  SonarQube is operational
----------------------------------------
+
 GET ACCESS IN BROWSER 
 ```bash
 192.168.157.133:9000
@@ -206,12 +208,12 @@ GET ACCESS IN BROWSER
 DEFAULT USERNAME: admin
 DEFAULT PASSWORD: admin
 UPDATE THE PASSWORD -> password
--------------------------------------------------------
+
 Generate Token in SonarQube
 Account > MyAccount > Security > Generate Token 
 Enter Token Name: test Type: User Token  Expires in: 30
 token-*************
---------------------------------------------------
+
 
 Project > Create a local Project > Project display name: test Project key: test Main branch name : main Next > Choose the baseline for new code for this project Use the global setting > Create Project 
 
